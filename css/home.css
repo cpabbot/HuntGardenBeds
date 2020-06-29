@@ -1,6 +1,10 @@
 .home-img {
     background-image: url("../img/garden1b.jpeg");
     filter: blur(3px) contrast(70%) brightness(120%) saturate(150%);
+    height: 100%;
+}
+
+.home-img-container {
     height: calc(100vh - 100px - var(--header-height));
 }
 
