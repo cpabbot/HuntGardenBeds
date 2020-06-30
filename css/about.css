@@ -1,8 +1,3 @@
 .willhunt-img {
-    background-image: url("../img/willhunt.jpeg");
-    background-size: cover;
-    background-position: center;
-    height: calc(100vh - var(--header-height));
-    width: 100%;
-    max-width: 450px;
+    width: 250px;
 }
