@@ -69,7 +69,7 @@ html, body { padding: 0; margin: 0; }
 }
 
 .padded-below {
-    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .bg-img {
