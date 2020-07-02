@@ -73,6 +73,14 @@ html, body { padding: 0; margin: 0; }
     padding-bottom: 15px;
 }
 
+.padded-text {
+    padding: 0.3rem 0;
+}
+
+.margin-above {
+    margin-top: 0.8rem;
+}
+
 .bg-img {
     background-size: cover;
     background-position: center;
@@ -82,6 +90,29 @@ html, body { padding: 0; margin: 0; }
     text-decoration: none;
     color: unset;
     position: cursor;
+    outline: none;
+}
+
+.form {
+    align-items: flex-start;
+    margin: 0;
+    max-width: 30rem;
+}
+
+.input {
+    padding: 0.8rem 0.5rem;
+    border: 0.1rem solid var(--light-gray);
+}
+
+.input:focus {
+    border-color: var(--primary);
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary);
+    color: var(--col);
+    border: none;
     outline: none;
 }
 

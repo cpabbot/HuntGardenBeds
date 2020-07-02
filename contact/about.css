@@ -1,0 +1,10 @@
+@media (min-width: 950px) {
+    .willhunt-wrapper {
+        position: sticky;
+        height: calc(100vh - var(--header-height));
+        top: var(--header-height);
+        display: flex;
+        align-items: center;
+        margin-top: -15px;
+    }
+}
