@@ -6,6 +6,7 @@ html, body { padding: 0; margin: 0; }
     --tertiary: #444;
     --col: #fff;
     --font: 'Raleway', sans-serif;
+    --light-gray: #ddd;
 
     font-family: var(--font);
     color: var(--tertiary);
@@ -15,7 +16,7 @@ html, body { padding: 0; margin: 0; }
 
 .responsive {
     /* Changes with viewport */
-    --header-height: 56px;
+    --header-height: 60px;
 }
 
 .dark-element {
@@ -89,7 +90,7 @@ html, body { padding: 0; margin: 0; }
     color: var(--text);
     box-shadow: var(--shadow);
     height: var(--header-height, 70px);
-    font-weight: 200;
+    font-weight: 400;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -99,6 +100,13 @@ html, body { padding: 0; margin: 0; }
 .nav-text {
     padding: 10px;
     font-size: 0.8em;
+    color: var(--light-gray);
+    --active: #fff;
+}
+
+.active {
+    color: var(--active);
+    font-weight: bold;
 }
 
 .hidden {
@@ -128,7 +136,7 @@ html, body { padding: 0; margin: 0; }
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media (min-width: 500px) {
     .responsive {
         --header-height: 65px;
     }
