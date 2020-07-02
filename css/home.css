@@ -11,3 +11,12 @@
 .header-top {
     height: 100px;
 }
+
+.footer {
+    background-color: var(--tertiary, #444);
+    font-weight: lighter;
+    font-size: 0.8rem;
+    flex-direction: column;
+    letter-spacing: 0.2rem;
+    /* color: var(--light-gray); */
+}

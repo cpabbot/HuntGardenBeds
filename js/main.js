@@ -11,7 +11,7 @@
       for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
         var positionFromTop = elements[i].getBoundingClientRect().top;
-  
+        
         if (positionFromTop - windowHeight <= -200) {
           element.classList.add('fade-in');
           element.classList.remove('hidden');
@@ -21,7 +21,7 @@
   
     window.addEventListener('scroll', checkPosition);
     window.addEventListener('resize', init);
-  
+    
     init();
     checkPosition();
   })();
