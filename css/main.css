@@ -80,7 +80,7 @@ html, body { padding: 0; margin: 0; }
 
 .link {
     text-decoration: none;
-    color: unset;
+    /* color: unset; */
     position: cursor;
     outline: none;
 }
