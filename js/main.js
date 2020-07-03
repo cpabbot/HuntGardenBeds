@@ -12,9 +12,10 @@
         var element = elements[i];
         var positionFromTop = elements[i].getBoundingClientRect().top;
         
-        if (positionFromTop - windowHeight <= -200) {
+        if (positionFromTop - windowHeight <= -150) {
           element.classList.add('fade-in');
           element.classList.remove('hidden');
+          console.log(i + ": " + positionFromTop + " - " + windowHeight);
         }
       }
     }
