@@ -5,11 +5,11 @@
 }
 
 .home-img-container {
-    height: calc(100vh - 100px - var(--header-height));
+    height: calc(100vh - 150px - var(--header-height));
 }
 
 .header-top {
-    height: 100px;
+    height: 150px;
 }
 
 .footer {

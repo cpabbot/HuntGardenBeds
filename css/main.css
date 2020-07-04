@@ -4,9 +4,13 @@ html, body { padding: 0; margin: 0; }
 .theme {
     --primary: #079;
     --tertiary: #444;
-    --col: #fff;
+    --accent: #f8a;
+    --text: var(--tertiary, #444);
     --font: 'Raleway', sans-serif;
     --light-gray: #ddd;
+    --shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 
+              0px 4px 5px 0px rgba(0,0,0,0.14), 
+              0px 1px 10px 0px rgba(0,0,0,0.12);
 
     font-family: var(--font);
     color: var(--tertiary);
@@ -20,11 +24,8 @@ html, body { padding: 0; margin: 0; }
 }
 
 .dark-element {
-    --bg: var(--primary, #555);
+    --bg: var(--tertiary, #555);
     --text: #fff;
-    --shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 
-              0px 4px 5px 0px rgba(0,0,0,0.14), 
-              0px 1px 10px 0px rgba(0,0,0,0.12);
 
     background-color: var(--bg);
     color: var(--text);
@@ -80,9 +81,13 @@ html, body { padding: 0; margin: 0; }
 
 .link {
     text-decoration: none;
-    /* color: unset; */
+    color: var(--accent);
     position: cursor;
     outline: none;
+}
+
+.link:hover {
+    color: var(--link-hover-col);
 }
 
 .form {
@@ -103,13 +108,13 @@ html, body { padding: 0; margin: 0; }
 .btn {
     padding: 0.7rem 1.5rem;
     background-color: var(--primary);
-    color: var(--col);
+    color: #fff;
     border: none;
     outline: none;
 }
 
 .header {
-    background-color: var(--bg);
+    background-color: var(--primary);
     color: var(--text);
     box-shadow: var(--shadow);
     height: var(--header-height, 70px);
@@ -118,13 +123,24 @@ html, body { padding: 0; margin: 0; }
     top: 0;
     z-index: 1;
     flex-wrap: nowrap;
+    --text: var(--light-gray);
 }
 
 .nav-text {
     padding: 10px;
     font-size: 0.8em;
-    color: var(--light-gray);
+    color: var(--text);
     --active: #fff;
+}
+
+.subheader {
+    position: sticky;
+    top: var(--header-height);
+    background-color: #fff;
+    z-index: 1;
+    transition: padding 200ms;
+    box-shadow: var(--shadow);
+    --link-hover-col: var(--primary);
 }
 
 .active {

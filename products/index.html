@@ -8,6 +8,14 @@
 <link rel="icon" type="image/png" href="../img/favicon.ico">
 <title>Products | Hunt Garden Beds</title>
 
+<style>
+    .anchor {
+        position: absolute;
+        top: 0;
+        margin-top: calc(-1 * (var(--header-height) + 40px));
+    }
+</style>
+
 </head>
 <body>
 
@@ -20,11 +28,45 @@
         <a href="../contact/" class="link nav-text"><span>CONTACT</span></a>
         <a href="../about/" class="link nav-text"><span>ABOUT</span></a>
     </header>
-    <div class="container padded space-evenly">
-        
+    <div shrink-on-scroll class="subheader | container padded space-evenly">
+        <a href="#base-series" class="nav-text | padded link" style="margin: 0;">Base Series</a>
+        <a href="#rustic-series" class="nav-text | padded link" style="margin: 0;">Rustic Series</a>
+        <a href="#modern-series" class="nav-text | padded link" style="margin: 0;">Modern Series</a>
     </div>
-    
+    <div class="container flex-col space-evenly">
+        <div class="dark-element container padded space-evenly">
+            <span class="anchor" id="base-series"></span>
+            <div class="padded">
+                <h2>Base Series</h2>
+                <p>
+                    
+                </p>
+            </div>
+            <img src="../img/baseseries.jpeg" alt="base series" class="element hidden">
+        </div>
+        <div class="container padded space-evenly">
+            <div class="padded">
+                <span class="anchor" id="rustic-series"></span>
+                <h2>Rustic Series</h2>
+                <p>
+                    
+                </p>
+            </div>
+            <img src="../img/rusticseries.jpeg" alt="rustic series" class="element hidden">
+        </div>
+        <div class="dark-element container padded space-evenly">
+            <div class="padded">
+                <span class="anchor" id="modern-series"></span>
+                <h2>Modern Series</h2>
+                <p>
+                    
+                </p>
+            </div>
+            <img src="../img/modernseries.jpeg" alt="base series" class="element hidden">
+        </div>
+    </div>
 </div>
 
+<script src="../js/main.js"></script>
 </body>
 </html>
