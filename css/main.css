@@ -2,7 +2,9 @@
 html, body { padding: 0; margin: 0; }
 
 .theme {
-    --primary: #079;
+    --primary: #10566e;
+    /* --primary: #00263e; */
+    /* --primary: #079; */
     --tertiary: #444;
     --accent: #f8a;
     --text: var(--tertiary, #444);

@@ -1,6 +1,7 @@
 .home-img {
     background-image: url("../img/garden1b.jpeg");
-    filter: blur(3px) contrast(70%) brightness(120%) saturate(150%);
+    /* filter: blur(3px) contrast(70%) brightness(120%) saturate(150%); */
+    filter: brightness(140%) contrast(60%) saturate(180%);;
     height: 100%;
 }
 
