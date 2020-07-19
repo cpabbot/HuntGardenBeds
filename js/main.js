@@ -15,7 +15,7 @@
         if (positionFromTop - windowHeight <= -175) {
           element.classList.add('fade-in');
           element.classList.remove('hidden');
-          console.log(i + ": " + positionFromTop + " - " + windowHeight);
+          // console.log(i + ": " + positionFromTop + " - " + windowHeight);
         }
       }
       
@@ -33,3 +33,16 @@
     init();
     checkPosition();
   })();
+
+function expandContentBelow(linkElement) {
+  const content = linkElement.nextElementSibling;
+  // content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+  if(content.style.maxHeight) {
+    content.style.maxHeight = null;
+    linkElement.innerHTML = "See Options and Pricing";
+  }
+  else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    linkElement.innerHTML = "Hide Options and Pricing";
+  }
+}

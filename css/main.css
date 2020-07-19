@@ -90,7 +90,7 @@ html, body { padding: 0; margin: 0; }
 .link {
     text-decoration: none;
     color: var(--accent);
-    position: cursor;
+    cursor: pointer;
     outline: none;
 }
 
@@ -154,6 +154,34 @@ html, body { padding: 0; margin: 0; }
 .active {
     color: var(--active);
     font-weight: bold;
+}
+
+.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    color: var(--text);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.table tbody tr {
+    border-bottom: 0.8px solid #999;
+}
+
+.table th {
+    background: var(--primary);
+}
+
+.table th, td {
+    padding: 0.8rem 1rem;
 }
 
 .hidden {
